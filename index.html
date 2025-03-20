@@ -58,7 +58,13 @@
         margin-top: 15px;
         margin-bottom: 30px;
         border-radius: 5px;
-        font-size: 18px;
+        font-size: 14px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .btn:hover{
+        transform: scale(1.1);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
       }
 
       p {
@@ -154,11 +160,60 @@
         font-style: italic;
       }
 
-      /* .table-container table{
-        border: 1px;
+      .table-container{
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+      }
+
+      table{
         width: 100%;
-        cellpadding
-      } */
+        border-collapse: collapse;
+        background-color: white;
+        color: black;
+        text-align: left;
+      }
+
+      th,td{
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      th{
+        background-color: #f39c12;
+        color: white;
+      }
+
+      footer{
+        background-color: #0d3c47;
+        color: white;
+        padding: 30px;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .footer{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .footer-content, .footer-links{
+        max-width: 400px;
+      }
+
+      .footer-content h3, .footer-links h4{
+        margin-bottom: 10px;
+      }
+
+      .footer-text a{
+        color: white;
+        text-decoration: none;
+      }
+
+      .footer-text a:hover{
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
@@ -320,7 +375,23 @@
         </tr>
       </table>
 
-      
+      <footer>
+        <div class="footer">
+          <div class="footer-contents">
+            <h3>Sri Lanka Tours</h3>
+            <p>Address: 250 Mount Road, Colombo, Sri Lanka.</p>
+            <p>Phone: +94 300 678 789</p>
+            <p>Email: <a href="mailto:info@srilankatours.com">info@srilankatours.com</a></p>
+          </div>
+
+          <div class="footer-links">
+            <h4>Travel Tips</h4>
+            <p>Wildlife | Encounters | Historical Sites | Beach Getaways | Travel Guides</p>
+          </div>
+        </div>
+        <hr>
+        <p class="footer-text">&copy; 2019-24 Sri Lanka Express. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </footer>
     </div>
   </body>
 </html>
