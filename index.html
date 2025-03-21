@@ -4,217 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Culture of Sri Lanka</title>
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif, serif;
-        background-color: #155264;
-        color: white;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-      }
-
-      .heading {
-        width: 80%;
-        margin: auto;
-        padding: 20px;
-      }
-
-      #head {
-        font-size: 28px;
-        padding-top: 25px;
-        padding-bottom: 15px;
-      }
-      #head-p {
-        font-size: 11px;
-        padding-bottom: 15px;
-      }
-
-      .container {
-        width: 80%;
-        margin: auto;
-        padding: 20px;
-      }
-
-      .flag {
-        width: 200px;
-        padding-bottom: 10px;
-      }
-
-      #intro {
-        font-family: "Times New Roman";
-        font-size: 41px;
-        font-weight: bold;
-        margin: 20px 0;
-      }
-
-      .btn {
-        background-color: #f39c12;
-        color: white;
-        padding: 12px 24px;
-        text-decoration: none;
-        display: inline-block;
-        margin-top: 15px;
-        margin-bottom: 30px;
-        border-radius: 5px;
-        font-size: 14px;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-      }
-
-      .btn:hover{
-        transform: scale(1.1);
-        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-      }
-
-      p {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
-
-      .video {
-        width: 100%;
-        max-width: 800px;
-        margin: 50px auto;
-        position: relative;
-        padding: 50px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .container-video video {
-        width: 90%;
-        height: 500px;
-        border-radius: 50px;
-        object-fit: cover;
-      }
-
-      .gallery-container h2 {
-        font-family: Georgia, "Times New Roman", Times, serif;
-        font-size: 60px;
-        height: 20px;
-        padding-bottom: 5px;
-      }
-
-      .gallery-container p {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        padding-bottom: 30px;
-      }
-
-      .gallery {
-        display: flex;
-        justify-content: space-around;
-        margin: 20px auto;
-      }
-
-      .gallery img {
-        width: 30%;
-        border-radius: 10px;
-        padding-bottom: 50px;
-      }
-
-      .why-choose-container h2 {
-        font-family: Georgia, "Times New Roman", Times, serif;
-        font-size: 60px;
-        height: 20px;
-        padding-bottom: 5px;
-      }
-
-      .why-choose-container p {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        padding-bottom: 30px;
-      }
-
-      .why-choose {
-        padding: 20px;
-        border-radius: 10px;
-        display: flex;
-        justify-content: space-around;
-        margin: 20px auto;
-      }
-
-      .why-choose div {
-        background-color: #dc975a;
-        padding: 20px;
-        margin: 20px;
-        border-radius: 10px;
-        width: 30%;
-      }
-
-      .testimonial {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 40px auto;
-        padding: 20px;
-      }
-
-      .testimonial img {
-        width: 50%;
-        border-radius: 10px;
-      }
-
-      .testimonial p {
-        width: 40%;
-        padding-left: 30px;
-        font-style: italic;
-      }
-
-      .table-container{
-        width: 80%;
-        margin: auto;
-        padding: 20px;
-      }
-
-      table{
-        width: 100%;
-        border-collapse: collapse;
-        background-color: white;
-        color: black;
-        text-align: left;
-      }
-
-      th,td{
-        border: 1px solid black;
-        padding: 10px;
-      }
-
-      th{
-        background-color: #f39c12;
-        color: white;
-      }
-
-      footer{
-        background-color: #0d3c47;
-        color: white;
-        padding: 30px;
-        text-align: center;
-        margin-top: 30px;
-      }
-
-      .footer{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-      }
-
-      .footer-content, .footer-links{
-        max-width: 400px;
-      }
-
-      .footer-content h3, .footer-links h4{
-        margin-bottom: 10px;
-      }
-
-      .footer-text a{
-        color: white;
-        text-decoration: none;
-      }
-
-      .footer-text a:hover{
-        text-decoration: underline;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="heading">
@@ -239,8 +33,8 @@
         src="img/Sri Lanka In 4K - Land Of Stunning Natural Wonders  Scenic Relaxation Film.mp4"
         muted
         loop
-        onmouseover="this.play()"
-        onmouseout="this.pause(); this.currentTime=9;"
+        onmouseover="this.muted = false; this.play()"
+        onmouseout="this.muted = true; this.pause(); this.currentTime=9;"
       ></video>
     </div>
 
@@ -311,8 +105,8 @@
         width="100%"
         cellpadding="10"
         cellspacing="0"
-        style="background-color: white; color: black; text-align: left">
-      
+        style="background-color: white; color: black; text-align: left"
+      >
         <tr>
           <th>Category</th>
           <th>Value</th>
@@ -345,52 +139,109 @@
         </tr>
         <tr>
           <td>Climate</td>
-          <td>Tropical climate (two monsoon seasons: May to September & December to February)</td>
-            <td></td>
+          <td>
+            Tropical climate (two monsoon seasons: May to September & December
+            to February)
+          </td>
+          <td></td>
         </tr>
         <tr>
-            <td>Major Religions</td>
-            <td>Buddhism: 70.2% <br> Hinduism: 12.6% <br> Islam: 9.7% <br> Christianity: 7.4%</td>
-            <td></td>
+          <td>Major Religions</td>
+          <td>
+            Buddhism: 70.2% <br />
+            Hinduism: 12.6% <br />
+            Islam: 9.7% <br />
+            Christianity: 7.4%
+          </td>
+          <td></td>
         </tr>
         <tr>
-            <td>Independence Day</td>
-            <td>February 4, 1948</td>
-            <td></td>
+          <td>Independence Day</td>
+          <td>February 4, 1948</td>
+          <td></td>
         </tr>
         <tr>
-            <td>Major Industries</td>
-            <td>Tea, textiles, tourism, and remittances</td>
-            <td>Also includes agriculture, spices, fisheries, software development</td>
+          <td>Major Industries</td>
+          <td>Tea, textiles, tourism, and remittances</td>
+          <td>
+            Also includes agriculture, spices, fisheries, software development
+          </td>
         </tr>
         <tr>
-            <td>UNESCO World Heritage Sites</td>
-            <td>Sigiriya, Anuradhapura, Polonnaruwa, Kandy, Galle Fort, etc.</td>
-            <td>More than 8 listed sites</td>
+          <td>UNESCO World Heritage Sites</td>
+          <td>Sigiriya, Anuradhapura, Polonnaruwa, Kandy, Galle Fort, etc.</td>
+          <td>More than 8 listed sites</td>
         </tr>
         <tr>
-            <td>Official Festivals</td>
-            <td>New Year, Vesak, Thai Pongal, Christmas</td>
-            <td>Esala Perahera, Sinhala-Tamil New Year, etc.</td>
+          <td>Official Festivals</td>
+          <td>New Year, Vesak, Thai Pongal, Christmas</td>
+          <td>Esala Perahera, Sinhala-Tamil New Year, etc.</td>
         </tr>
       </table>
 
       <footer>
-        <div class="footer">
+        <div class="footer-container">
           <div class="footer-contents">
             <h3>Sri Lanka Tours</h3>
-            <p>Address: 250 Mount Road, Colombo, Sri Lanka.</p>
-            <p>Phone: +94 300 678 789</p>
-            <p>Email: <a href="mailto:info@srilankatours.com">info@srilankatours.com</a></p>
+            <p>
+              <strong>Address:</strong><br />
+              123 Island Road, Colombo, Sri Lanka
+            </p>
+            <p>
+              <strong>Phone:</strong><br />
+              1800 456 7890 <br />
+              info@srilankatravels.com
+            </p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://x.com/"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="https://www.linkedin.com/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.youtube.com/"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
           </div>
 
           <div class="footer-links">
-            <h4>Travel Tips</h4>
-            <p>Wildlife | Encounters | Historical Sites | Beach Getaways | Travel Guides</p>
+            <ul>
+              <li>Travel Tips</li>
+              <li><hr /></li>
+              <li>Local Cuisine</li>
+              <li><hr /></li>
+              <li>Cultural Insights</li>
+              <li><hr /></li>
+              <li>Adventure Activities</li>
+            </ul>
+            <ul>
+              <li>Wildlife Encounters</li>
+              <li><hr /></li>
+              <li>Historical Sites</li>
+              <li><hr /></li>
+              <li>Beach Getaways</li>
+              <li><hr /></li>
+              <li>Travel Guides</li>
+            </ul>
           </div>
         </div>
-        <hr>
-        <p class="footer-text">&copy; 2019-24 Sri Lanka Express. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+
+        <hr />
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 Sri Lanka Escapes. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
